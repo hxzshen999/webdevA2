@@ -16,7 +16,6 @@
     header {
         width: 100%;
         display: flex;
-
         justify-content: space-around;
         align-items: center;
         background-image: linear-gradient(45deg, rgb(50, 38, 38), rgb(67, 45, 43), rgb(81, 49, 46), rgb(101, 67, 53), rgb(111, 78, 55));
@@ -717,7 +716,7 @@
 
     /* ---------------------Header--------------------- */
     header {
-        border-top: 10px solid grey;
+        border-top: 2px solid grey;
         height: 28%;
         width: 100%;
         display: flex;
@@ -949,14 +948,14 @@
     }
 
     .items-list>.items>img {
-        width: 450px;
-        height: 450px;
+        width: 250px;
+        height: 250px;
         object-fit: contain;
     }
 
     /* Hide all the detail description by default */
     .items-list .items .more {
-        padding-top: 100px;
+        padding-top: 5px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -967,14 +966,14 @@
     }
 
     .more .title {
-        margin: 20px;
+        margin: 10px;
         font-weight: 700;
     }
 
     .more .description {
-        font-size: 90px;
+        font-size: 80px;
         font-weight: 700;
-        margin: 20px;
+        margin: 10px;
 
     }
 
@@ -986,16 +985,15 @@
 
     /* Styling for introduction title */
     .items-list .items .introduction .title {
-        font-size: 2em;
+        font-size: 1.3em;
     }
 
     .items-list .items .introduction .name {
-        font-size: 90px;
+        font-size: 70px;
         font-weight: 700;
     }
 
     .items-list>.items>.introduction>.description {
-
         font-size: 36px;
         border: 3px solid grey;
     }
@@ -1003,7 +1001,6 @@
     .items-list>.items>.introduction>.see-more {
         background-color: bisque;
         font-weight: 900;
-        margin-top: 5px;
         padding: 8px;
         font-size: 18px;
         border-radius: 25px;
@@ -1050,9 +1047,9 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        top: 890px;
+        top: 690px;
         width: 100%;
-        gap: 110px;
+        gap: 90px;
     }
 
     /* Three button attribute on style */
@@ -1198,10 +1195,6 @@
             filter: blur(0);
         }
     }
-
-
-
-
 
     /* ------------ Content <Game>   -------------*/
 
