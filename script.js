@@ -95,6 +95,7 @@ function showNextItems(type) {
 
 }
 
+// Add to all the see-more button in the list
 seeMoreBtn.forEach(function (button) {
 
     button.onclick = function () {
@@ -113,7 +114,6 @@ backBtn.onclick = function () {
 //------------------ Game Section ----------------------//
 
 // Message board function
-
 document.getElementById("submitBtn").addEventListener("click", function () {
     // Get user name and message content
     var username = document.getElementById("userName").value;
@@ -146,6 +146,7 @@ document.getElementById("submitBtn").addEventListener("click", function () {
     document.getElementById('message').value = '';
 });
 
+// Get the current date when user leave feedback
 function getCurrentTime() {
     var now = new Date();
     var year = now.getFullYear();
@@ -154,16 +155,16 @@ function getCurrentTime() {
     var hour = ('0' + now.getHours()).slice(-2);
     var minutes = ('0' + now.getMinutes()).slice(-2);
     var seconds = ('0' + now.getSeconds()).slice(-2);
-
     return year + '/' + month + '/' + day + ' ' + hour + ':' + minutes + ':' + seconds;
 }
 
-
+// Get the game element
 var player = document.getElementById("mc");
 var coffee = document.getElementById("coffee");
 var jumpBtn = document.getElementById("jumpBtn");
 var gameBackground = document.querySelector("#pageGame .gameWindow");
 var startBtn = document.querySelector(".startBtn");
+
 const energyDisplay = document.querySelector(".energy");
 
 var energy = 0;
@@ -191,15 +192,16 @@ jumpBtn.addEventListener('click', function () {
 
 });
 
-// Add W key to jump also
+// Add another 'W' key to jump
 document.addEventListener('keydown', function (event) {
     if (event.key === 'w' || event.key === 'W') {
         jumpBtn.click();
     }
 });
 
-var checkHit;
+
 // Constantly check for collision
+var checkHit;
 checkHit = setInterval(function () {
     var playerRect = player.getBoundingClientRect();
     var coffeeRect = coffee.getBoundingClientRect();
@@ -246,9 +248,3 @@ function gameOver() {
     coffee.classList.remove('coffeeAnim');
     gameBackground.classList.remove("backgroundAnim");
 }
-
-// 
-
-
-
-
