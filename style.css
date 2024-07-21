@@ -61,7 +61,6 @@
     /*------------------- END Header --------------------*/
 
     /* ---------------------Body--------------------- */
-
     .mainBody {
         border: 5px solid grey;
         display: flex;
@@ -88,6 +87,7 @@
         width: 100%;
     }
 
+    /* Individual section styling */
     .section {
         height: auto;
         width: 100%;
@@ -157,7 +157,6 @@
         width: 800px;
         height: 700px;
     }
-
 
     /* --------------------- END PageHome --------------------- */
 
@@ -353,7 +352,7 @@
         text-align: center;
     }
 
-    /* FeedBack Board */
+    /* FeedBack Form */
     .feedBack {
         width: 50%;
         height: auto;
@@ -377,6 +376,7 @@
     textarea:focus {
         outline: none;
     }
+
 
     input,
     textarea {
@@ -425,6 +425,7 @@
         border-radius: 45px;
     }
 
+    /* FeedBack Board */
     #feedBackBoard {
         width: 100%;
         text-align: left;
@@ -506,6 +507,7 @@
         flex-wrap: wrap;
     }
 
+    /* Box properties for container */
     .box {
         height: 100vh;
         width: 30%;
@@ -514,6 +516,7 @@
         overflow: scroll;
     }
 
+    /* Background effect for top container */
     #top::before {
         content: "";
         position: absolute;
@@ -532,6 +535,7 @@
         position: relative;
     }
 
+    /* Background effect for bottom container */
     #bottom::before {
         content: "";
         position: absolute;
@@ -545,6 +549,7 @@
         opacity: 0.9;
     }
 
+    /* Element in container need to be highlighted */
     #top span,
     #top p,
     #mid h1 {
@@ -589,7 +594,7 @@
     }
 
 
-    /* --------------------- Animation --------------------- */
+    /* --------------------- Animation for desktop --------------------- */
     @keyframes fadeIn {
         from {
             transform: translateY(50px);
@@ -849,6 +854,7 @@
         height: 91vh;
     }
 
+    /* Content container for home page */
     .content-section {
         border: 5px solid rgb(148, 168, 49);
         height: auto;
@@ -872,6 +878,7 @@
         position: relative;
     }
 
+    /* Back ground image effect */
     .section::before {
         content: "";
         position: absolute;
@@ -1093,6 +1100,7 @@
         z-index: 99;
     }
 
+    /* Embedded video properties */
     .items iframe {
         opacity: 0;
     }
@@ -1220,7 +1228,6 @@
         justify-content: space-evenly;
     }
 
-
     .gameContent {
         width: 100%;
         height: auto;
@@ -1267,6 +1274,7 @@
         background-size: cover;
     }
 
+    /* Player */
     .gameContent .gameWindow #mc {
         width: 100px;
         height: 100px;
@@ -1279,6 +1287,7 @@
 
     }
 
+    /* Coffee */
     .gameContent .gameWindow #coffee {
         width: 100px;
         height: 100px;
@@ -1292,10 +1301,12 @@
 
     }
 
+    /* Background */
     .backgroundAnim {
         animation: moveBackground 5s linear infinite;
     }
 
+    /* Animation for game page */
     @keyframes coffee {
         0% {
             left: 650px;
@@ -1548,6 +1559,7 @@
         opacity: 0.9;
     }
 
+    /* Properties that need to be enlarge */
     #top span,
     #top p,
     #mid h1 {
@@ -1565,11 +1577,9 @@
     }
 
     #mid {
-
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
         overflow: scroll;
     }
 
