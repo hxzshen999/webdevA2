@@ -11,12 +11,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        border: 6px solid rgb(230, 0, 255);
     }
 
     header {
         width: 100%;
         display: flex;
+
         justify-content: space-around;
         align-items: center;
         background-image: linear-gradient(45deg, rgb(50, 38, 38), rgb(67, 45, 43), rgb(81, 49, 46), rgb(101, 67, 53), rgb(111, 78, 55));
@@ -33,6 +33,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .navbar {
@@ -77,7 +78,6 @@
     .mainContent {
         width: 100%;
         height: 100%;
-        border: 5px solid rgb(0, 255, 4);
     }
 
     /* --------------------- END Body--------------------- */
@@ -142,13 +142,11 @@
     }
 
     .section .sectionImage {
-
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 100%;
-        border: 5px solid rgb(255, 0, 0);
 
         filter: blur(0) brightness(1);
     }
@@ -178,7 +176,6 @@
         justify-content: center;
         flex-direction: column;
         height: auto;
-        border: 3px solid rgb(59, 82, 255);
     }
 
     .items .name,
@@ -658,7 +655,6 @@
     /* ---------------------Footer--------------------- */
     .footer {
         text-align: center;
-        border: 3px solid rgb(59, 82, 255);
         background-color: aquamarine;
         height: 3em;
         margin-top: 1.5em;
@@ -717,7 +713,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        border: 1px solid rgb(230, 0, 255);
     }
 
     /* ---------------------Header--------------------- */
@@ -834,7 +829,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
         background-image: url("images/bg1.jpeg");
         background-position: center;
         padding-bottom: 1.25em;
@@ -844,8 +838,6 @@
     .mainContent {
         width: 100%;
         height: 100%;
-        border: 5px solid rgb(0, 255, 4);
-        order: 0;
     }
 
     /* ------------ Content <Home>   -------------*/
@@ -856,11 +848,9 @@
 
     /* Content container for home page */
     .content-section {
-        border: 5px solid rgb(148, 168, 49);
         height: auto;
         width: 100%;
         overflow: scroll;
-        scroll-snap-type: y proximity;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -872,9 +862,7 @@
         max-height: 100%;
         display: flex;
         flex-direction: column;
-        font-size: 23px;
-        scroll-snap-align: end;
-
+        font-size: 20px;
         position: relative;
     }
 
@@ -885,7 +873,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 120%;
         background-image: url("images/bg3.png");
         background-size: cover;
         background-position: center;
@@ -893,14 +881,14 @@
     }
 
     .section>.titles {
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 700;
         display: flex;
         justify-content: left;
         margin: 0 auto;
         opacity: 0;
         animation: fadeIn 1s 0.25s ease-in-out 1 forwards;
-
+        padding-top: 20px;
         background: linear-gradient(90deg, #D4145A 0%, #FBB03B 100%);
         background-clip: text;
         color: transparent;
@@ -925,15 +913,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 100%;
-        border: 5px solid rgb(255, 0, 0);
+        margin: 0 auto;
+        width: 46%;
+        height: 46%;
         z-index: 1;
     }
 
     .section .sectionImage>img {
-        width: 88%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
     }
 
 
