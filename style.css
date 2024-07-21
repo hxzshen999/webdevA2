@@ -1050,6 +1050,7 @@
         top: 690px;
         width: 100%;
         gap: 90px;
+        z-index: 99;
     }
 
     /* Three button attribute on style */
@@ -1060,6 +1061,7 @@
         border-radius: 50%;
         border: 3px solid grey;
         font-size: 45px;
+        z-index: 99;
     }
 
     .items-list>.arrow>#previous {
